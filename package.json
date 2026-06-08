@@ -1,0 +1,13 @@
+{
+  "name": "pintio",
+  "private": true,
+  "scripts": {
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "api:dev": "cd backend && npm run start:dev",
+    "api:build": "cd backend && npm run build",
+    "scraper:seed": "cd scraper && python seed_flash.py",
+    "scraper:worker": "cd scraper && python worker.py",
+    "mobile:start": "cd mobile && npm start"
+  }
+}
